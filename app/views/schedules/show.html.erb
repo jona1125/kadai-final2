@@ -6,7 +6,7 @@
     <td><%= @schedule.id %></td>
   </tr>
   <tr>
-    <th>スケジュール</th>
+    <th>タスク</th>
     <td><%= @schedule.content %></td>
   </tr>
   <tr>
@@ -19,7 +19,7 @@
   </tr>
 </table>
 
-<%= link_to 'この予定を編集する', edit_schedule_path(@schedule), class: 'btn btn-light' %>
-<%= link_to 'この予定を削除する', @schedule, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }, class: 'btn btn-danger' %>
+<%= link_to 'このタスクを編集する', edit_schedule_path(@schedule), class: 'btn btn-light' %>
+<%= link_to 'このタスクを削除する', @schedule, method: :delete, data: { confirm: '本当に削除してよろしいですか？' }, class: 'btn btn-danger' %>
 
 <%= link_to '一覧に戻る', schedules_path, class: 'btn btn-primary'%>
